@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ITSO.OSGIExample.Service2
+Bundle-SymbolicName: ITSO.OSGIExample.Service2
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.itso.example.osgi.api
+Bundle-Blueprint: OSGI-INF/blueprint/*.xml
+

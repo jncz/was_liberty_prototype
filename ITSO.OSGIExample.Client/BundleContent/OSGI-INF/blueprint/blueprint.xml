@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<reference id="helloRef"
+		interface="com.itso.example.osgi.api.HelloAPI" />
+	<bean id="HelloITSOClientBean"
+		class="com.itso.example.osgi.client.HelloITSOClient"
+		init-method="init">
+		<property name="helloService" ref="helloRef"/>
+	</bean>
+</blueprint>

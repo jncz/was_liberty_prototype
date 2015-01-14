@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<service interface="com.itso.example.osgi.api.HelloAPI"
+		ref="ErrorPrinterBean" ranking="10">
+		<registration-listener ref="ErrorPrinterBean" registration-method="reg" unregistration-method="unreg"/>
+	</service>
+	<bean id="ErrorPrinterBean"
+		class="com.itso.example.service.error.ErrorPrinter" />
+</blueprint>

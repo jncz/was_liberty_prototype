@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<service interface="com.itso.example.osgi.api.HelloAPI" ref="ServiceImpl2Bean">
+	</service>
+	<bean id="ServiceImpl2Bean"
+		class="com.itso.example.osgi.service2.ServiceImpl2" />
+</blueprint>

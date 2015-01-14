@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" default-timeout="2000">
+	<bean id="HelloImplBean"
+		class="com.itso.example.osgi.service.HelloImpl" />
+	<service id="HelloImplBeanService" ref="HelloImplBean"
+		interface="com.itso.example.osgi.api.HelloAPI" ranking="1"/>
+</blueprint>
